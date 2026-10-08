@@ -1,190 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0b4f8a">
-
-  <title>Agent Sathi</title>
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f7fb;
-      color: #1c2b3a;
-    }
-
-    .app {
-      max-width: 480px;
-      min-height: 100vh;
-      margin: auto;
-      background: #f4f7fb;
-      padding-bottom: 30px;
-    }
-
-    .header {
-      background: linear-gradient(135deg, #073b66, #0b69a3);
-      color: white;
-      padding: 35px 22px 32px;
-      border-radius: 0 0 28px 28px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-    }
-
-    .brand {
-      font-size: 30px;
-      font-weight: 700;
-      margin-bottom: 6px;
-    }
-
-    .tagline {
-      font-size: 14px;
-      opacity: 0.9;
-    }
-
-    .welcome {
-      padding: 24px 20px 12px;
-    }
-
-    .welcome h2 {
-      font-size: 21px;
-      margin-bottom: 7px;
-    }
-
-    .welcome p {
-      font-size: 14px;
-      color: #687786;
-      line-height: 1.5;
-    }
-
-    .section-title {
-      padding: 10px 20px 12px;
-      font-size: 16px;
-      font-weight: 700;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-      padding: 0 20px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 18px;
-      padding: 22px 15px;
-      min-height: 145px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.07);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      cursor: pointer;
-      transition: transform 0.2s ease;
-    }
-
-    .card:active {
-      transform: scale(0.97);
-    }
-
-    .icon {
-      font-size: 34px;
-      margin-bottom: 18px;
-    }
-
-    .card h3 {
-      font-size: 16px;
-      margin-bottom: 6px;
-    }
-
-    .card p {
-      font-size: 12px;
-      color: #71808e;
-      line-height: 1.4;
-    }
-
-    .footer {
-      text-align: center;
-      padding: 30px 20px 10px;
-      color: #82909c;
-      font-size: 12px;
-    }
-
-    @media (max-width: 350px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#104e82"><title>Star Agent Sathi</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f2f6fb;color:#183047}header{background:linear-gradient(120deg,#104e82,#1676a8);color:white;padding:28px 20px;border-radius:0 0 24px 24px}header .inner,main,footer{max-width:900px;margin:auto}h1{font-size:26px;margin:0 0 6px}header p{margin:0;color:#d7ecfb;font-size:14px}main{padding:24px 16px}h2{font-size:19px;margin:12px 0 5px}.intro{color:#526579;font-size:14px;margin-bottom:22px}.section-head{display:flex;align-items:center;justify-content:space-between;margin:25px 0 12px}.section-head h2{margin:0}.pill{font-size:11px;font-weight:700;padding:6px 10px;border-radius:30px;background:#dff7e8;color:#126538}.pill.premium{background:#fff0d4;color:#825200}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.tile{background:#fff;border:1px solid #e0e8f0;border-radius:16px;padding:18px 14px;box-shadow:0 4px 12px #1830470a;min-height:126px;display:flex;flex-direction:column;gap:8px}.tile .emoji{font-size:26px}.tile strong{font-size:14px}.tile small{font-size:12px;line-height:1.4;color:#63768a}.tile .status{font-size:11px;font-weight:700;color:#188149;margin-top:auto}.tile .status.locked{color:#9b6814}.plan{background:#123f69;color:#fff;padding:20px;border-radius:17px;margin-top:28px;display:flex;align-items:center;justify-content:space-between;gap:14px}.plan strong{font-size:24px}.plan p{font-size:12px;color:#d3e6f5;margin:5px 0 0}.plan button{background:#fff;color:#123f69;border:0;border-radius:9px;padding:11px 14px;font-weight:700;cursor:pointer}.note{font-size:12px;color:#66798b;margin-top:14px;line-height:1.6}footer{text-align:center;padding:20px 15px 30px;color:#718398;font-size:12px}@media(min-width:650px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:380px){.plan{align-items:flex-start;flex-direction:column}}
+</style>
 </head>
-
 <body>
-
-  <div class="app">
-
-    <div class="header">
-      <div class="brand">Agent Sathi</div>
-      <div class="tagline">Your Smart Insurance Companion</div>
-    </div>
-
-    <div class="welcome">
-      <h2>Welcome 👋</h2>
-      <p>
-        Everything you need to assist your customers,
-        right at your fingertips.
-      </p>
-    </div>
-
-    <div class="section-title">
-      Insurance Tools
-    </div>
-
-    <div class="grid">
-
-      <div class="card">
-        <div>
-          <div class="icon">₹</div>
-          <h3>Premium Calculator</h3>
-        </div>
-        <p>Calculate health insurance premium quickly.</p>
-      </div>
-
-      <div class="card">
-        <div>
-          <div class="icon">⚖️</div>
-          <h3>Compare Plans</h3>
-        </div>
-        <p>Compare insurance plans and benefits.</p>
-      </div>
-
-      <div class="card">
-        <div>
-          <div class="icon">🛡️</div>
-          <h3>Product Features</h3>
-        </div>
-        <p>Explore important policy features.</p>
-      </div>
-
-      <div class="card">
-        <div>
-          <div class="icon">📚</div>
-          <h3>Resources</h3>
-        </div>
-        <p>Useful information for insurance agents.</p>
-      </div>
-
-    </div>
-
-    <div class="footer">
-      Agent Sathi • Insurance made simpler
-    </div>
-
-  </div>
-
-</body>
-</html>
+<header><div class="inner"><h1>⭐ Star Agent Sathi</h1><p>Smart Toolkit for Star Health Insurance Agents</p></div></header>
+<main>
+<h2>Welcome 👋</h2><p class="intro">Your everyday insurance tools, all in one place.</p>
+<div class="section-head"><h2>Free Tools</h2><span class="pill">FREE</span></div>
+<div class="grid">
+<div class="tile"><span class="emoji">🧮</span><strong>Premium Calculator</strong><small>Calculate Star Health policy premiums.</small><span class="status">✓ Free access</span></div>
+<div class="tile"><span class="emoji">📄</span><strong>Quotation</strong><small>Prepare and share customer quotations.</small><span class="status">✓ Free access</span></div>
+</div>
+<div class="section-head"><h2>Premium Tools</h2><span class="pill premium">🔒 ₹499 / year</span></div>
+<div class="grid">
+<div class="tile"><span class="emoji">⚖️</span><strong>Premium Comparison</strong><small>Compare Care Health, HDFC ERGO and Niva Bupa with Star Health.</small><span class="status locked">🔒 Premium</span></div>
+<div class="tile"><span class="emoji">📑</span><strong>Product One Pager</strong><small>Official Star Health one-page product documents.</small><span class="status locked">🔒 Premium</span></div>
+<div class="tile"><span class="emoji">📘</span><strong>Product Brochure</strong><small>Browse official product brochures.</small><span class="status locked">🔒 Premium</span></div>
+<div class="tile"><span class="emoji">📚</span><strong>Prospectus</strong><small>Access official product prospectuses.</small><span class="status locked">🔒 Premium</span></div>
+<div class="tile"><span class="emoji">📝</span><strong>Claim Form</strong><small>Find official claim forms.</small><span class="status locked">🔒 Premium</span></div>
+<div class="tile"><span class="emoji">🔄</span><strong>Renewal Link</strong><small>Quick access to policy renewal.</small><span class="status locked">🔒 Premium</span></div>
+<div class="tile"><span class="emoji">💳</span><strong>EMI Link</strong><small>Access available EMI facilities.</small><span class="status locked">🔒 Premium</span></div>
+<div class="tile"><span class="emoji">💰</span><strong>BimaPay BNPL</strong><small>1, 2 and 3-year options, subject to eligibility.</small><span class="status locked">🔒 Premium</span></div>
+<div class="tile"><span class="emoji">☑️</span><strong>New Policy Checklist</strong><small>Google Form for new policy requirements.</small><span class="status locked">🔒 Premium</span></div>
+</div>
+<div class="plan"><div><strong>₹499 / year</strong><p>Unlock all nine premium tools</p></div><button type="button" onclick="alert('Subscription payments will be available after secure login and billing are implemented.')">Coming Soon</button></div>
+<p class="note">Preview only: feature cards, OTP login, subscriptions and payments are not yet connected. Independent agent toolkit. Not an official Star Health app.</p>
+</main><footer>© Star Agent Sathi • Dashboard Preview</footer>
+</body></html>
